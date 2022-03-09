@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Q8{
+public class Q7{
     public static void main(String[] args){
         Scanner in = new Scanner(System.in);
         double salarioHora = 0, horasMes = 0, salarioTotalBruto = 0, impostoRenda = 0, inss = 0, sindicato = 0, salarioTotalLiquido = 0;

@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * App
  */
-public class Q6 {
+public class Q5 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         /* declarando variáveis para calcular a área de um circulo */
