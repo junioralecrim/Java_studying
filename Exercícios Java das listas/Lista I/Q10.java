@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Q10{
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        /*declarando variáveis para calcular as raízes da equação do segundo grau*/
+        /*ddeclarando variáveis para calcular as raízes da equação do segundo grau*/
         double a = 0, b = 0, c = 0, delta = 0, x1 = 0, x2 = 0;
 
         System.out.println("------- CÁLCULO DAS RAÍZES DA EQUAÇÃO DO SEGUNDO GRAU -------");
