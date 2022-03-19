@@ -44,5 +44,5 @@ public class Q10{
     }
  
    
-
+/*A parte da raíz tem algum problema que eu ainda não consegui resolver.*/
 
