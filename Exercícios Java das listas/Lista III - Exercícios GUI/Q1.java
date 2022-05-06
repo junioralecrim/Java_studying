@@ -2,7 +2,7 @@ import javax.swing.*;
 
 import java.awt.*;
 
-public class helloWorld {
+public class Q1 {
     public static void main(String[] args) {
         JFrame Screen  = new JFrame("Olá mundo");
         JLabel Text = new JLabel("Bem vindo a minha primeira GUI");
