@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java OO - Período 3.iml" filepath="$PROJECT_DIR$/.idea/Java OO - Período 3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula02-Guanabara/aula02-Guanabara.iml" filepath="$PROJECT_DIR$/aula02-Guanabara/aula02-Guanabara.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aula02-Guanabara_EXERCICIO/aula02-Guanabara_EXERCICIO.iml" filepath="$PROJECT_DIR$/aula02-Guanabara_EXERCICIO/aula02-Guanabara_EXERCICIO.iml" />
+    </modules>
+  </component>
+</project>
