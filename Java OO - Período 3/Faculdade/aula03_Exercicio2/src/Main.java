@@ -29,7 +29,9 @@ public class Main {
             controleTv.mudarCanalCima();
         }
         if (i == 7){
-            controleTv.escolherCanal();
+            System.out.println("Digite o canal que você quer: ");
+            int receberCanal = in.nextInt();
+            controleTv.escolherCanal(receberCanal);
         }
     }
 

@@ -26,10 +26,8 @@ public class ControleTelevisao {
         tv1.mostrarCanal();
     }
 
-    public void escolherCanal(){
-        Scanner in = new Scanner(System.in);
-        System.out.println("Digite o canal que você quer: ");
-        tv1.canal = in.nextInt();
+    public void escolherCanal(int receberCanal){
+        tv1.canal = receberCanal;
         tv1.mostrarCanal();
     }
 }
