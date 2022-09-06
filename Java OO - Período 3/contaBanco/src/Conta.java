@@ -1,10 +1,10 @@
 public class Conta {
-    private int numero;
+    public int numero;
     private int senha;
-    public String tipo;
-    public String dono;
+    protected String tipo;
+    private String dono;
     private float saldo;
-    protected boolean status;
+    private boolean status;
 
     //setMethods
     public void setNumero(int numero) {
@@ -41,8 +41,10 @@ public class Conta {
         extrato()
         pagarMensal()*/
 
-    public void abrirConta(String nome, int cpf, int senha){
-        System.out.println("" + nome + "" + cpf + "" + senha);
+    public void abrirConta(String nome, String tipo, String cpf, int senha){
+        tipo.equals()
+
+        System.out.println("" + nome + "" + tipo + "" + cpf + "" + senha);
 
 
     }
