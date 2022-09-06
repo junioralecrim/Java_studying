@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+
+    public static void limparbuff(Scanner sca){
+        if(sca.hasNextLine()) {
+            sca.nextLine();
+        }
+    }
     public static void main(String[] args) {
         Conta contaPessoa = new Conta();
         Scanner in = new Scanner(System.in);
@@ -17,13 +23,16 @@ public class Main {
         switch (opcao) {
 
             case 1:
-            System.out.println("Seu nome: ");
-            String nome = in.next();
-            System.out.println("CPF: ");
-            int cpf = in.nextInt();
-            System.out.println("Agora, digite uma senha de 4 dígitos: ");
+            System.out.print("Seu nome: ");
+            String nome = in.nextLine();
+            limparbuff(in);
+            System.out.print("CPF: ");
+            String cpf = in.next();
+            System.out.print("Digite o tipo de conta que você deseja\nCC - Conta corrente\nCP - Conta poupança\n ");
+            String tipo = in.next();
+            System.out.print("Agora, digite uma senha de 4 dígitos: ");
             int senha = in.nextInt();
-            contaPessoa.abrirConta(nome, cpf, senha);
+            contaPessoa.abrirConta(nome, tipo, cpf, senha);
                 break;
 
             case 2:
