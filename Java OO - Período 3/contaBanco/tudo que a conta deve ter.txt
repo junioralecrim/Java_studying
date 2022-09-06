@@ -16,6 +16,7 @@ abrirConta()
     //Steps
     // Definir nome de usuario,
     // CPF (verificar se o cpf é valido)
+    // tipo,
     // numero,
     // senha.
     // Colocar autometicamente o boolean como True
