@@ -1,3 +1,24 @@
+/////////////////// LISTA DE COMANDOS ('aprendidos até o momento')///////////////////
+DDL - "Date Definition Language"
+CREATE DATABASE
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+
+DML - "Date Definition Language"
+INSERT INTO
+UPDATE
+DELETE
+TRUNCATE
+
+
+
+
+
+
+
+
+
 //COMANDOS de definição ('DDL - Date Definition Language');
 
 CREATE DATABASE cadastro
@@ -27,6 +48,7 @@ insert into pessoas values
 (default, 'Ana', '2006-1-10', 'F', '80.0', '2.00', default),
 (default, 'Clara', '2006-2-16', 'F', '72.0', '1.74', 'EUA'),
 (default, 'Anastácia', '2006-9-4', 'F', '66.0', '1.52', default);
+
 
 //selecione todos os dados para "pessoas"; 
 select * from pessoas;
@@ -151,7 +173,7 @@ desc teste;
 select * from teste;
 
 ///////////////////////////////////////////////////////////////
-COMANDOS PARA MANIPULAR LINHAS
+COMANDOS PARA MANIPULAR LINHAS/TUPLAS/REGISTROS
 //Aula 07, Manipulando linhas (UPDATE, DELETE, TRUNCATE)
 /registro, linha e tupla são a mesma coisa;
 
@@ -180,7 +202,7 @@ set nome = 'PHP', ano = '2015'
 where idcurso = '4';
 
 //o limit serve para limitar a quantidade de linhas afetadas. Serve para não correr o risco de alterar uma 
-quantidade acima da desejada. Com o limit = 1, vou alterar simente uma linha
+quantidade acima da desejada. Com o limit = 1, vou alterar somente uma linha
 //NOTA: O update não serve para excluir linhas. Dá pra apagar os dados delas, mas as linhas vão continuar lá.
 Pra apagar as linhas em si, vai ser utilizado outro comando.
 ;
@@ -190,15 +212,29 @@ set nome = 'Java', carga = '40', ano = '2015'
 where idcurso = '5'
 limit 1;
 
-//apagar registros/linhas
+update cursos
+set descricao = 'Dicas de Photoshop (PS) CC'
+where idcurso ='3'
+limit 1;
+
+select * from cursos;
 
 
+// Delete - APAGAR TUPLAS/REGISTROS/LINHAS. AQUI EXISTE UMA DICA IMPORTANTE:
+tomar muito cuidado quando for usar o delete, pois é um comando sem possibilidade de retorno do registro apagado. Assim, é sempre muito importante
+manter um back-up do seu BD;
 
+//delete de apenas uma linha;
+delete from cursos
+where idcurso = '9';
 
+/usar o limit é uma boa prática para evitar deletar mais registros do que eu quero
+//delete de várias linhas;
 
+delete from cursos
+where ano = '2018'
+limit 2;
 
-
-
-
-
-
+//apagando TODAS AS LINHAS de uma TABELA
+"truncar" uma tabela significa apagar TODOS os registros;
+truncate table cursos;
