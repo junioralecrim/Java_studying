@@ -234,3 +234,29 @@ truncate table cursos;
 
 use cadastro;
 select * from cursos;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///////////////////;
+
+use exemplo;
