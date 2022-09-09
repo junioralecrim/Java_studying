@@ -12,13 +12,6 @@ DELETE
 TRUNCATE
 
 
-
-
-
-
-
-
-
 //COMANDOS de definição ('DDL - Date Definition Language');
 
 CREATE DATABASE cadastro
@@ -238,3 +231,6 @@ limit 2;
 //apagando TODAS AS LINHAS de uma TABELA
 "truncar" uma tabela significa apagar TODOS os registros;
 truncate table cursos;
+
+use cadastro;
+select * from cursos;
