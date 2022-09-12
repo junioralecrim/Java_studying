@@ -11,6 +11,8 @@ UPDATE
 DELETE
 TRUNCATE
 
+DQL - "Data Query Language" (algo como "linguagem de selção/pergunta") 
+SELECT
 
 //COMANDOS de definição ('DDL - Date Definition Language');
 
