@@ -33,7 +33,7 @@ public class Luta {
 
             desafiante.apresentar();
             int vencedor = 1; //AINDA PRECISO CRIAR UM GERADOR DE NÚMERO ALEATÓRIO
-            
+
 
 
 
