@@ -1,8 +1,8 @@
-import java.util.Scanner;
+
 
 public class ControleTelevisao {
     //instanciar objeto tv aqui pra alterar lá no outro
-    Televisao tv1 = new Televisao();
+    Televisao tv1;
     public int mudarVolume;
     public int mudarCanal;
 

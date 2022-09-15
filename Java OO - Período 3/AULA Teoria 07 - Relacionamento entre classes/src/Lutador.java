@@ -68,7 +68,8 @@ public class Lutador {
 
     public void setPeso(Float pe) {
         this.peso = pe;
-        setCategoria();
+        setCategoria(); //como não vai pegar de fora da classe, não preciso passar o pe como parâmetro.
+        //até pq também já estou passando na parte de cima
     }
 
     public Float getPeso() {

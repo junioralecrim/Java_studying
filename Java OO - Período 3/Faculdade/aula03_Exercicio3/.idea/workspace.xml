@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="937e715f-4a76-46a6-941a-87e89087329b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../AULA Teoria 07 - Relacionamento entre classes/src/Lutador.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../AULA Teoria 07 - Relacionamento entre classes/src/Lutador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula03_Exercicio2/src/ControleTelevisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../aula03_Exercicio2/src/ControleTelevisao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula03_Exercicio2/src/Televisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../aula03_Exercicio2/src/Televisao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula03_Exercicio3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/aula03_Exercicio2/Televisao.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/aula03_Exercicio2/Televisao.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2EmMdwb0IdnC9V6J7TJZcbeIKKA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Java OO - Período 3/Faculdade/aula03_Exercicio2"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="937e715f-4a76-46a6-941a-87e89087329b" name="Changes" comment="" />
+      <created>1663196397237</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663196397237</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

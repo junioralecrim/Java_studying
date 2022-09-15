@@ -3,7 +3,7 @@ public class Televisao {
     public int volume;
 
     public void mostrarVolume(){
-        if((this.volume <= 100) && (this.volume >= 1)){
+        if((this.volume <= 100) && (this.volume >= 0)){
             System.out.println("\nVolume do canal: " + this.volume);
         } else {
             System.out.println("O volume tem que estar entre 100 e 0");
