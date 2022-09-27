@@ -13,11 +13,11 @@ public class Main {
 
         if (numeroInicial < numeroFinal){
             for(int i = numeroInicial; i <= numeroFinal;){
-                System.out.println(i + "...");
+                System.out.print(i + "... ");
             }
         } else {
             for(int i = numeroInicial; i >= numeroFinal; i--){
-                System.out.println(i + "...");
+                System.out.print(i + "... ");
             }
         }
     }

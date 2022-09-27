@@ -2,16 +2,9 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static void clearBuffer(Scanner scanner) {
-        if (scanner.hasNextLine()) {
-            scanner.nextLine();
-        }
-    }
-
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        String melhorAluno = "";
+        String nomeAluno, melhorAluno = "";
         int notaAluno, maiorNotaAluno = 0;
 
         System.out.println("--------------------- ESCOLA SANTA MARIA ---------------------\n");
@@ -20,11 +13,10 @@ public class Main {
 
         for (int i = 0; i < quantAlunos; i++){
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-            System.out.print("Nome aluno: ");
-            String nomeAluno = in.nextLine();
+            System.out.println("Nome aluno: ");
+            nomeAluno = in.next();
 
-            clearBuffer(in);
-            System.out.print("Nota: ");
+            System.out.println("Nota: ");
             notaAluno = in.nextInt();
             if (maiorNotaAluno < notaAluno){
                 melhorAluno = nomeAluno;
@@ -32,7 +24,6 @@ public class Main {
             }
         }
 
-        System.out.println("========================= MELHOR ALUNO =========================\nNome: " + melhorAluno + "Nota: " + maiorNotaAluno);
-        
+        System.out.println("========================= MELHOR ALUNO =========================\nNome: " + melhorAluno + "\nNota: " + maiorNotaAluno);
     }
 }
