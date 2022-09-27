@@ -1,0 +1,25 @@
+# Mapa de Questões
+
+- **ex01:** Conte até onde o usuário quiser 
+---
+- **ex02:** Digitar alguns valores, somá-los e mostrar qual é o maior valor
+---
+- **ex03:** Contagem inteligente crescente ou decrescente
+---
+- **ex04:** Mostrando qual o melhor aluno da turma
+---
+- **ex05:** Estrutura do while ---> Você arrumou o quarto?
+---
+- **ex06:** Tabuada com do while
+---
+- **ex07:** Ler várias vezes numeros diferentes e dizer quantos deles são negativos
+---
+- **ex08:** Fatorial
+---
+- **ex09:** Numero primo
+---
+- **ex10:** Super Menu de Contagem- Menu de 3 opções com contagens e saída, feito apenas com while e do while
+---
+- **ex11:** Menu para selecionar pessoas e mostrar de acordo com as condições pedidas
+---
+- **ex12:** Contagem de números pares entre um range descrito pelo usuário
