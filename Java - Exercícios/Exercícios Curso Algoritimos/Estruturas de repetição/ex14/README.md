@@ -1,0 +1,1 @@
+Deixar o user digitar dois números e mostrar na tela a combinação em pares desse número com os outros

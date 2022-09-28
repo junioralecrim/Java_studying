@@ -15,6 +15,10 @@
       <module fileurl="file://$PROJECT_DIR$/ex10/ex10.iml" filepath="$PROJECT_DIR$/ex10/ex10.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex11/ex11.iml" filepath="$PROJECT_DIR$/ex11/ex11.iml" />
       <module fileurl="file://$PROJECT_DIR$/ex12/ex12.iml" filepath="$PROJECT_DIR$/ex12/ex12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex13/ex13.iml" filepath="$PROJECT_DIR$/ex13/ex13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex14/ex14.iml" filepath="$PROJECT_DIR$/ex14/ex14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex15/ex15.iml" filepath="$PROJECT_DIR$/ex15/ex15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex16/ex16.iml" filepath="$PROJECT_DIR$/ex16/ex16.iml" />
     </modules>
   </component>
 </project>

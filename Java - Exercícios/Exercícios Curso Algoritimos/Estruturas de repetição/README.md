@@ -23,3 +23,12 @@
 - **ex11:** Menu para selecionar pessoas e mostrar de acordo com as condições pedidas
 ---
 - **ex12:** Contagem de números pares entre um range descrito pelo usuário
+---
+- **ex13:** Pedir pro usuário digitar 6 números e ver quantos estão entre 0 e 10 e somar os
+  que forem ímpares
+---
+- **ex14:** Deixar o user digitar dois números e mostrar na tela a combinação em pares desse número com os outros
+---
+- **ex15:** Sequência de fibonnaci
+---
+- **ex16:** Analisador de valores para exibir: Soma dos valores, média entre os valores, quantos são divisíveis por 5, quantos são nulos, soma dos pares.
