@@ -1,0 +1,1 @@
+Verificar se o número é par ou ímpar
