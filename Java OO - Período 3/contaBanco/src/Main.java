@@ -20,7 +20,7 @@ public class Main {
                 "0 - Sair do sistema ");
         int opcao = in.nextInt();
 
-        do {
+        while (opcao != 0) {
         switch (opcao) {
             case 1:
                 System.out.print("Seu nome: ");
@@ -37,11 +37,12 @@ public class Main {
 
             case 2:
                 contaPessoa.fecharConta();
-
                 break;
 
             case 3:
-                contaPessoa.depositar();
+                System.out.println("Digite o valor do depósito: ");
+                float valorDep = in.nextFloat();
+                contaPessoa.depositar(valorDep);
 
                 break;
 
@@ -59,13 +60,11 @@ public class Main {
                 System.out.println("Ainda em desenvolvimento...");
                 break;
 
-
-
             default:
                 System.out.println("Ainda em desenvolvimento...");
 
-        }
-        } while (opcao != 0);
+        }}
+
 
     }
 }

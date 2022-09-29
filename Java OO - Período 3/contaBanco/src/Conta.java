@@ -54,19 +54,33 @@ public class Conta {
         }
     }
 
-    public void depositar(){
+    public void depositar(float valorDep){
         if (status == true){
-            System.out.println("Digite o valor do depósito: ");
-            float valorDep = in.nextInt();
-
             if (valorDep > 0.00){
                 saldo += valorDep;
             } else {
                 System.out.println("O VALOR DO DEPÓSITO TEM QUE SER MAIOR QUE 0.00");
             }
-
         } else {
             System.out.println("OPS! VOCÊ AINDA NÃO ABRIU UMA CONTA!");
+        }
+    }
+
+    public void sacar(float valorSaque){
+        if (status == true){
+            if (saldo <= valorSaque){
+                saldo = saldo - valorSaque;
+            }
+        } else {
+            System.out.println("OPS! VOCÊ AINDA NÃO ABRIU UMA CONTA!");
+        }
+    }
+
+    public void pagarMensalidade(){
+        if (tipo.equals("cc")){
+            saldo = saldo - 12;
+        } if (tipo.equals("cp")){
+            saldo = saldo - 20;
         }
     }
 }
