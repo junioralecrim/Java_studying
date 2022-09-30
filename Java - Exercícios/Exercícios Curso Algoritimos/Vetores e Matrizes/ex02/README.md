@@ -1,0 +1,1 @@
+Peça para o user digitar alguns valores e imprima quantos deles são pares

@@ -1,0 +1,1 @@
+Teste simples de laço for com vetor
