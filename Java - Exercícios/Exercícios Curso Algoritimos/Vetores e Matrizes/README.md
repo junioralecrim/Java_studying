@@ -12,3 +12,5 @@
 - **ex05:** Torneio de Futebol. Realizar combinações entre os times de tal forma que
   não seja repetido um time com ele mesmo.
 ---
+- **ex06:** Cadastro de gabarito e de provas de aluno, mostrando notas de cada um e a média geral da turma no final
+---
