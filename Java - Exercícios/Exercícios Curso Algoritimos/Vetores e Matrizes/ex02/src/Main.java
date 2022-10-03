@@ -22,7 +22,17 @@ public class Main {
                    quantValPar += 1;
             }
         }
-        System.out.println("=================================\nQuant valores pares = " + quantValPar);
+
+        System.out.println("\nAs posições dos valores pares são: ");
+
+        for (int i = 0; i < n; i++){
+            if (vet[i]%2 == 0){
+                System.out.print("\nvet[" + i + "]");
+            }
+        }
+
+
+        System.out.println("\n=================================\nQuant valores pares = " + quantValPar);
 
     }
 }

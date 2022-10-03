@@ -2,5 +2,13 @@
 
 - **ex01:** Teste simples de laço for com vetor
 ---
-- **ex02:** 
+- **ex02:** Peça para o user digitar alguns valores, imprima quantos e as posições
+  dos que são pares.
+---
+- **ex03:** Alunos, notas e médias com vetores.
+---
+- **ex04:** Só importa quem começa com a letra 'C'
+---
+- **ex05:** Torneio de Futebol. Realizar combinações entre os times de tal forma que
+  não seja repetido um time com ele mesmo.
 ---
