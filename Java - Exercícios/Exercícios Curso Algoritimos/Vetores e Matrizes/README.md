@@ -16,3 +16,7 @@
 ----
 - **ex07:** CINEMA - Reserva de Cadeiras
 ---
+- **ex08:** Vetor com mais dimensões
+---
+- **ex09:** Matriz identidade de terceira ordem
+---
