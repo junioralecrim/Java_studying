@@ -13,4 +13,6 @@
   não seja repetido um time com ele mesmo.
 ---
 - **ex06:** Cadastro de gabarito e de provas de aluno, mostrando notas de cada um e a média geral da turma no final
+----
+- **ex07:** CINEMA - Reserva de Cadeiras
 ---
