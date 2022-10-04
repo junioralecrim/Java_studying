@@ -17,53 +17,58 @@ public class Main {
                 "3 - Depositar\n" +
                 "4 - Sacar\n" +
                 "5 - Pagar Mensalidade\n" +
-                "0 - Sair do sistema ");
+                "0 - Sair do sistema \n");
         int opcao = in.nextInt();
 
         while (opcao != 0) {
-        switch (opcao) {
-            case 1:
-                System.out.print("Seu nome: ");
-                String nome = in.nextLine();
-                limparbuff(in);
-                System.out.print("CPF: ");
-                String cpf = in.next();
-                System.out.print("Digite o tipo de conta que você deseja\nCC - Conta corrente\nCP - Conta poupança\n ");
-                String tipo = in.next().toLowerCase();
-                System.out.print("Agora, digite uma senha de 4 dígitos: ");
-                int senha = in.nextInt();
-                contaPessoa.abrirConta(nome, tipo, cpf, senha);
-                break;
+            switch (opcao) {
+                case 1:
+                    in.nextLine();
+                    System.out.print("Seu nome: ");
+                    String nome = in.nextLine();
+                    System.out.print("\nCPF: ");
+                    String cpf = in.next();
+                    System.out.print("\nDigite o tipo de conta que você deseja\nCC - Conta corrente\nCP - Conta poupança\n ");
+                    String tipo = in.next().toLowerCase();
+                    System.out.print("Agora, digite uma senha de 4 dígitos: ");
+                    int senha = in.nextInt();
+                    contaPessoa.abrirConta(nome, tipo, cpf, senha);
+                    break;
 
-            case 2:
-                contaPessoa.fecharConta();
-                break;
+                case 2:
+                    contaPessoa.fecharConta();
+                    break;
 
-            case 3:
-                System.out.println("Digite o valor do depósito: ");
-                float valorDep = in.nextFloat();
-                contaPessoa.depositar(valorDep);
+                case 3:
+                    System.out.print("Digite o valor do depósito: ");
+                    float valorDep = in.nextFloat();
+                    contaPessoa.depositar(valorDep);
+                    break;
 
-                break;
+                case 4:
+                    System.out.println("Digite o valor do saque: ");
+                    float valorSaque = in.nextFloat();
+                    contaPessoa.sacar(valorSaque);
+                    break;
 
-            case 4:
-                System.out.println("Ainda em desenvolvimento...");
+                case 5:
+                    contaPessoa.pagarMensalidade();
+                    break;
 
-                break;
 
-            case 5:
-                System.out.println("Ainda em desenvolvimento...");
+                default:
+                    System.out.println("\nDIGITE ALGUMA OPÇÃO VÁLIDA");
 
-                break;
-
-            case 0:
-                System.out.println("Ainda em desenvolvimento...");
-                break;
-
-            default:
-                System.out.println("Ainda em desenvolvimento...");
-
-        }}
+            }
+            System.out.println(
+                    "\n1 - Abrir conta\n" +
+                            "2 - Fechar conta\n" +
+                            "3 - Depositar\n" +
+                            "4 - Sacar\n" +
+                            "5 - Pagar Mensalidade\n" +
+                            "0 - Sair do sistema \n");
+            opcao = in.nextInt();
+        }
 
 
     }
