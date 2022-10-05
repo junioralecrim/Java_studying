@@ -24,12 +24,18 @@ public class Main {
     public static int[] resultCount(String[][] matrizVelha){
         int contX = 0, contO = 0;
         int vals[] = new int[2];
+
+        //count horizonatal
         for (int linha = 0; linha < 3; linha++){
+
             if (contX == 3 || contO == 3){
                 break;
+
             } else {
+
                 contX = 0;
                 contO = 0;
+
                 for (int coluna = 0; coluna < 3; coluna++){
                     if (matrizVelha[linha][coluna].toLowerCase().equals("x")){
                         contX += 1;
@@ -39,9 +45,32 @@ public class Main {
                         vals[1] = contO;
                     }
                 }
-
             }
         }
+        //count vertical
+        for (int linha = 0; linha < 3; linha++){
+
+            if (contX == 3 || contO == 3){
+                break;
+
+            } else {
+
+                contX = 0;
+                contO = 0;
+
+                for (int coluna = 0; coluna < 3; coluna++){
+                    if (matrizVelha[coluna][linha].toLowerCase().equals("x")){
+                        contX += 1;
+                        vals[0] = contX;
+                    } else if (matrizVelha[coluna][linha].toLowerCase().equals("o")) {
+                        contO += 1;
+                        vals[1] = contO;
+                    }
+                }
+            }
+        }
+
+
         return vals;
     }
 
@@ -74,6 +103,13 @@ public class Main {
                 "+---+---+---+");
     }
 
+
+
+
+
+
+
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -81,8 +117,6 @@ public class Main {
         String matrizVelha[][] = {{"1", "2", "3"}, {"4", "5", "6"}, {"7", "8", "9"}};
 
         boolean vitoria = false;
-        int jogadorX, jogadorY;
-
 
 
         do {
@@ -108,7 +142,7 @@ public class Main {
                 break;
             }
 
-        } while (vitoria != true);
+        } while (vitoria != true);//redundante. verificar melhorias...
 
     }
 }
