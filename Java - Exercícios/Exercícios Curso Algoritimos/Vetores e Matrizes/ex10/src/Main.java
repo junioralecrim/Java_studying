@@ -2,7 +2,26 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int[] result(String[][] matrizVelha){
+    public static boolean vitoryResult(int[] valsContResult, String[][] matrizVelha){
+        boolean vitoria = false;
+        if (valsContResult[0] == 3){
+            System.out.println("\n");
+            printStatus(matrizVelha);
+            System.out.println("=========================");
+            System.out.println("VITÓRIA DO JOGADOR X!");
+            vitoria = true;
+        } else if (valsContResult[1] == 3) {
+            System.out.println("\n");
+            printStatus(matrizVelha);
+            System.out.println("=========================");
+            System.out.println("VITÓRIA DO JOGADOR O!");
+            vitoria = true;
+        }
+
+        return vitoria;
+    }
+
+    public static int[] resultCount(String[][] matrizVelha){
         int contX = 0, contO = 0;
         int vals[] = new int[2];
         for (int linha = 0; linha < 3; linha++){
@@ -20,6 +39,7 @@ public class Main {
                         vals[1] = contO;
                     }
                 }
+
             }
         }
         return vals;
@@ -68,25 +88,26 @@ public class Main {
         do {
             printStatus(matrizVelha);
             System.out.println("=========================");
-
-            System.out.println("-- Teste de jogada e verificação -- ");
             System.out.println("ONDE QUER COLOCAR O X?");
             String x = in.next();
             matrizVelha = play("x", matrizVelha, x);
-            valsContResult = result(matrizVelha);
-            if (valsContResult[0] == 3){
-                System.out.println("\n");
-                printStatus(matrizVelha);
-                System.out.println("=========================");
-                System.out.println("VITÓRIA DO JOGADOR X!");
-                vitoria = true;
-            } else if (valsContResult[1] == 3) {
-                System.out.println("\n");
-                printStatus(matrizVelha);
-                System.out.println("=========================");
-                System.out.println("VITÓRIA DO JOGADOR O!");
-                vitoria = true;
+            valsContResult = resultCount(matrizVelha);
+
+            if (vitoryResult(valsContResult, matrizVelha) == true){
+                break;
             }
+
+            printStatus(matrizVelha);
+            System.out.println("=========================");
+            System.out.println("ONDE QUER COLOCAR O O?");
+            String o = in.next();
+            matrizVelha = play("o", matrizVelha, o);
+            valsContResult = resultCount(matrizVelha);
+
+            if (vitoryResult(valsContResult, matrizVelha) == true){
+                break;
+            }
+
         } while (vitoria != true);
 
     }
