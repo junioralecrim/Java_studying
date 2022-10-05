@@ -21,6 +21,20 @@ public class Main {
         return vitoria;
     }
 
+    public static int[] limparVals(int[] vals){
+        if ((vals[0] < 3 || vals[1] < 3)){
+            vals[0] = 0;
+            vals[1] = 0;
+        }
+        return vals = vals;
+    }
+    public static int limparCount(int count){
+        if (count < 3){
+            count = 0;
+        }
+        return count;
+    }
+
     public static int[] resultCount(String[][] matrizVelha){
         int contX = 0, contO = 0;
         int vals[] = new int[2];
@@ -47,6 +61,10 @@ public class Main {
                 }
             }
         }
+
+        vals = limparVals(vals);
+        contX = limparCount(contX);
+        contO = limparCount(contO);
         //count vertical
         for (int linha = 0; linha < 3; linha++){
 
@@ -55,14 +73,11 @@ public class Main {
 
             } else {
 
-                contX = 0;
-                contO = 0;
-
                 for (int coluna = 0; coluna < 3; coluna++){
-                    if (matrizVelha[coluna][linha].toLowerCase().equals("x")){
+                    if (matrizVelha[linha][coluna].toLowerCase().equals("x")){
                         contX += 1;
                         vals[0] = contX;
-                    } else if (matrizVelha[coluna][linha].toLowerCase().equals("o")) {
+                    } else if (matrizVelha[linha][coluna].toLowerCase().equals("o")) {
                         contO += 1;
                         vals[1] = contO;
                     }
@@ -70,6 +85,32 @@ public class Main {
             }
         }
 
+
+        //count diagonal à direita e à esquerda
+        //a direita
+        vals = limparVals(vals);
+        contX = limparCount(contX);
+        contO = limparCount(contO);
+
+        for (int linha = 0; linha < 3; linha++){
+            if (contX == 3 || contO == 3){
+                break;
+
+            } else {
+
+                for (int coluna = 0; coluna < 3; coluna++){
+                if (linha == coluna){
+                    if (matrizVelha[linha][coluna].toLowerCase().equals("x")){
+                        contX += 1;
+                        vals[0] = contX;
+                    } else if (matrizVelha[linha][coluna].toLowerCase().equals("o")) {
+                        contO += 1;
+                        vals[1] = contO;
+                        }
+                    }
+                }
+            }
+        }
 
         return vals;
     }
