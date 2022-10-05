@@ -25,6 +25,7 @@ public class Conta {
 
     public void abrirConta(String nome, String tipo, String cpf, int senha){
         this.status = true;
+        this.tipo = tipo;
 
         if (tipo.equals("cc")){
             this.saldo = 50.00f;
