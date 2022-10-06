@@ -20,5 +20,5 @@
 ---
 - **ex09:** Matriz identidade de terceira ordem
 ---
-- **ex10:** Jogo da velha
+- **ex10:** Jogo da velha - CONCLUSÃO DO CURSO
 ---
