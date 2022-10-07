@@ -13,6 +13,11 @@ public class Conta {
     //outhers
     private String cpf;
 
+    public Conta() {
+        this.saldo = 0;
+        this.status = false;
+    }
+
 
     //otherMethods
     /*
@@ -27,9 +32,9 @@ public class Conta {
         setStatus(true);
         setTipo(tipo);
 
-        if (getTipo().equals("cc")){
+        if (this.getTipo().equals("cc")){
             setSaldo(50.00f);
-        } else if (getTipo().equals("cp")) {
+        } else if (this.getTipo().equals("cp")) {
             setSaldo(150.00f);
         } else {
             System.out.println("Você não digitou um tipo válido!");
