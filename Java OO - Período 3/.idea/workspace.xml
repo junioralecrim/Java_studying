@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="619f72b7-9ce5-4c19-b49d-4b7200354101" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faculdade/aula03_Exercicio2/src/ControleTelevisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faculdade/aula03_Exercicio2/src/ControleTelevisao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faculdade/aula03_Exercicio2/src/Televisao.java" beforeDir="false" afterPath="$PROJECT_DIR$/Faculdade/aula03_Exercicio2/src/Televisao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Faculdade/out/production/aula03_Exercicio2/Televisao.class" beforeDir="false" afterPath="$PROJECT_DIR$/Faculdade/out/production/aula03_Exercicio2/Televisao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aula06-Guanabara_Encapsulamento/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +27,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Java OO - Período 3/AULA Teoria 07 - Relacionamento entre classes"
+    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Java OO - Período 3/aula06-Guanabara_Encapsulamento"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
