@@ -1,14 +1,14 @@
 public class Lutador {
     //metodo construtor
-    public Lutador(String no, String nacio, int ida, Float altu, Float pe, int vito, int derro, int empa){
-        this.nome = no;
-        this.nacionalidade = nacio;
-        this.altura = altu;
-        this.idade = ida;
-        setPeso(pe);
-        this.vitorias = vito;
-        this.derrotas = derro;
-        this.empates = empa;
+    public Lutador(String nome, String nacionalidade, int idade, Float altura, Float peso, int vitorias, int derrotas, int empates){
+        this.nome = nome;
+        this.nacionalidade = nacionalidade;
+        this.altura = altura;
+        this.idade = idade;
+        setPeso(peso);
+        this.vitorias = vitorias;
+        this.derrotas = derrotas;
+        this.empates = empates;
 
     }
 
