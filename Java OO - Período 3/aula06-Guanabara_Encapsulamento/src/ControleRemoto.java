@@ -1,4 +1,5 @@
-public class ControleRemoto implements Controlador{
+public class ControleRemoto implements Controlador{/*a classe ControleRemoto implementa a interface
+controlador*/
 
     // Atributos
     private int volume;
@@ -9,31 +10,31 @@ public class ControleRemoto implements Controlador{
 
     public ControleRemoto() {
         this.volume = 50;
-        this.ligado = false;
+        this.ligado = true;
         this.tocando = false;
     }
 
-    public int getVolume() {
+    private int getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    private void setVolume(int volume) {
         this.volume = volume;
     }
 
-    public boolean isLigado() {
+    private boolean isLigado() {
         return ligado;
     }
 
-    public void setLigado(boolean ligado) {
+    private void setLigado(boolean ligado) {
         this.ligado = ligado;
     }
 
-    public boolean isTocando() {
+    private boolean isTocando() {
         return tocando;
     }
 
-    public void setTocando(boolean tocando) {
+    private void setTocando(boolean tocando) {
         this.tocando = tocando;
     }
 
@@ -41,52 +42,81 @@ public class ControleRemoto implements Controlador{
     vou desconsiderar a programação feita na interface e a utilizada vai ser apenas a feita aqui no @Override*/
 
     public void ligar() {
-        setLigado(true);
+        this.setLigado(true);
     }
 
     @Override
     public void desligar() {
-
+        this.setLigado(false);
     }
 
     @Override
     public void abrirMenu() {
-
+        System.out.println("Está ligado? " + this.isLigado());
+        System.out.println("Está tocando? " + this.isTocando());
+        System.out.print("Volume " + this.getVolume() + "\n");
+        for (int i = 0; i <= this.getVolume(); i++){
+            System.out.print("|");
+        }
     }
 
     @Override
     public void fecharMenu() {
-
+        System.out.println("Fechando menu... ");
     }
 
     @Override
     public void maisVolume() {
-
+        if (this.isLigado() == true && this.getVolume() <= 100){
+            this.setVolume(this.getVolume() + 5);
+        } else {
+            System.out.println("OPS. IMPOSSÍVEL AUMENTAR VOLUME!");
+        }
     }
 
     @Override
     public void menosVolume() {
-
+        if (this.isLigado() == true && this.getVolume() >= 5){
+            this.setVolume(this.getVolume() - 5);
+        } else {
+            System.out.println("OPS. IMPOSSÍVEL DIMINUIR VOLUME!");
+        }
     }
 
     @Override
     public void ligarMudo() {
-
+        if ((this.isLigado() == true) && (this.getVolume() > 0)){
+            this.setVolume(0);
+        } else {
+            System.out.println("IMPOSSÍVEL LIGAR MUDO");
+        }
     }
 
     @Override
     public void desligarMudo() {
-
+        if ((this.isLigado() == true) && (this.getVolume() == 0)){
+            this.setVolume(50);
+        } else {
+            System.out.println("IMPOSSÍVEL DESLIGAR MUDO");
+        }
     }
 
     @Override
     public void play() {
-
+        if (this.isLigado() == true && !(this.isTocando())){ //! = nesse caso, significa algo como "se NÃO estiver tocando"
+            this.setTocando(true);
+        } else {
+            System.out.println("IMPOSSÍVEL DAR PLAY");
+        }
     }
 
     @Override
     public void pause() {
-
+        if (this.isLigado() == true && this.isTocando()){
+            this.setTocando(false);
+        } else {
+            System.out.println("IMPOSSÍVEL DAR PAUSE");
+        }
     }
 
     //Implementando métodos abstratos

@@ -1,5 +1,6 @@
-public interface Controlador {
-    public abstract void ligar();
+public interface Controlador { //apenas a interface fica visível ao programa
+    public abstract void ligar();/*Métodos abstratos não tem seu código implementado
+    diretamente nele.*/
     public abstract void desligar();
     public abstract void abrirMenu();
     public abstract void fecharMenu();
