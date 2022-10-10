@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        A parte abaixo é usada para identificar o artefato (localização com o rep. maven)
+    -->
+
+    <groupId>id.test</groupId>
+    <artifactId>contas-pagar-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--
+        A parte abaixo é usada para configurar um plugin do "maven compiler"
+    -->
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.12.0</version>
+            <scope>compile</scope>  <!-- Utilizado para calcular o escopo da dependência. Vem como
+             padrão o compile. Ou seja, é basicamente para definir onde a dependência pode ser usada,
+             se é no projeto comleto, em uma path/classe específica
+
+             compile: dispoível para o projeto completo.
+             Ex de uso: vou usar as dependências no meu projeto completo
+
+             test: utilizar apenas no pacote/pasta test
+             Ex de uso: quando eu não preciso mandar as bibliotecas de dependências para o arquivo de prd
+
+             runtime: dependência que não é obrigatória na compilação do projeto, mas para executar o mesmo
+             a dependência precisa estar lá.
+
+             -->
+        </dependency>
+    </dependencies>
+</project>
+
+        <!--Minuto pausado do vid:
+        https://www.youtube.com/watch?v=ZQICkNszEuI&t=1s&ab_channel=AlgaWorks
+        -->
