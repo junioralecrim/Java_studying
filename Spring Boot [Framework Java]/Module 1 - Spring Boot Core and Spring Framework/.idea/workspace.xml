@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="619e44f6-b741-44e8-8994-04b81d1e01db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Seção 1 - Introdução/.idea/Seção 1 - Introdução.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Seção 1 - Introdução/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Seção 1 - Introdução/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Seção 1 - Introdução/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Seção 1 - Introdução/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Curso Algoritimos/Exercícios Curso Algoritimos/Vetores e Matrizes/JOGO DA VELHA/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Curso Algoritimos/Exercícios Curso Algoritimos/Vetores e Matrizes/JOGO DA VELHA/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/contas-pagar-api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../Java OO - Período 3/contas-pagar-api/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/src/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Java OO - Período 3/firstProject/src/main/java/io/github/junioralecrim/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Spring Boot [Framework Java]/Module 1 - Spring Boot Core and Spring Framework"
+    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Spring Boot [Framework Java]/Module 1 - Spring Boot Core and Spring Framework",
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

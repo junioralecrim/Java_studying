@@ -164,8 +164,9 @@ public class Main {
 
         for (int linha = 0; linha < 3; linha++){
             for (int coluna = 0; coluna < 3; coluna++){
-                if (matrizVelha[linha][coluna].equals(coordenada)){
+                if (matrizVelha[linha][coluna].equals(coordenada)) {
                     validMove = true;
+                    break;
                 }
             }
         }
@@ -208,7 +209,7 @@ public class Main {
                     matrizVelha = play("x", matrizVelha, x);
                     valsContResult = resultCount(matrizVelha);
                 }
-            } while (validPlay == false);
+            } while (!validPlay);
 
             if (vitoryResult(valsContResult, matrizVelha) == true) {
                 break;
@@ -241,7 +242,7 @@ public class Main {
             }
 
         } while (vitoria == false);//redundante. verificar melhorias...
-
+    
     }
 }
 
