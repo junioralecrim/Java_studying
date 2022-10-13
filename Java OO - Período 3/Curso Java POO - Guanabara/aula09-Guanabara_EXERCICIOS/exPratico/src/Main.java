@@ -10,6 +10,8 @@ public class Main {
         livros[1] = new Livro("200 Histórias de Mitologia Grega", "Desconhecido", 500, pessoas[0]);
         livros[2] = new Livro("God Of War 2", "Desconhecido", 169, pessoas[1]);
 
+        livros[1].abrir();
+        livros[1].folhear(250);
         System.out.println(livros[1].detalhes());
     }
 }

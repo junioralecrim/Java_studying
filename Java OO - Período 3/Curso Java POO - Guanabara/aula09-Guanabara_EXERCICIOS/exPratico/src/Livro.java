@@ -15,6 +15,7 @@ public class Livro implements Publicacao{
                 "\n, pagAtual=" + pagAtual +
                 "\n, aberto=" + aberto +
                 "\n, leitor=" + leitor.getNome() +
+                "\n, sexo=" + leitor.getSexo() +
                 '}';
     }
 
@@ -88,7 +89,11 @@ public class Livro implements Publicacao{
 
     @Override
     public void folhear(int pag) {
-        setPagAtual(pag);
+        if (pag <= getTotPaginas()){
+            setPagAtual(pag);
+        } else {
+            setPagAtual(0);
+        }
     }
 
     @Override
