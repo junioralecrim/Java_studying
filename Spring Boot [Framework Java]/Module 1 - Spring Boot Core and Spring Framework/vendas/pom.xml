@@ -27,7 +27,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.2.4.RELEASE</version>
-    </parent>
+    </parent> <!--Inicialização básica do SB 1/2-->
 
     <dependencies>
         <dependency>
@@ -35,11 +35,13 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <dependency> <!-- Trazendo o módulo web do spring boot-->
+        <dependency> <!-- starter web -->
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-    </dependencies>
+    </dependencies><!--Inicialização básica do SB 2/2-->
+
+
 
     <build>
         <plugins>
