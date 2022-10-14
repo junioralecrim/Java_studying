@@ -7,7 +7,7 @@ da classe a não ser os herdados pela superclasse/classe mãe "Pessoa".
 uma classe abstrata
 
 ---
-|Abstrato|Final
----|---|---|
-Classe| Não pode ser instâncciada. Só pode servir como progenitora| Não pode ser herdada por outra classe (não pode ter filhos). Obrigatoriamente folha
-Método| Declarado, mas não implementado na progenitora| Não pode ser sobrescrito pelas suas sub-classes. Obrigatoriamente herdado
+| --+--      | Abstrato                                                   | Final                                                                               |
+|------------|------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| **Classe** | Não pode ser instâncciada. Só pode servir como progenitora | Não pode ser herdada por outra classe _(não pode ter filhos)_. Obrigatoriamente folha |
+| **Método** | Declarado, mas não implementado na progenitora             | Não pode ser sobrescrito pelas suas sub-classes. Obrigatoriamente herdado           |

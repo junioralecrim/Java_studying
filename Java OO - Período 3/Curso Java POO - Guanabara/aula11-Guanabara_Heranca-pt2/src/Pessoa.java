@@ -1,9 +1,9 @@
-public class Pessoa {
+public abstract class Pessoa {//por ser uma classe abstrata, não pode ser implementada
     private String nome;
     private int idade;
     private String sexo;
 
-    public void fazerAniv(){
+    public final void fazerAniv(){// não pode ser sobreescrito
         setIdade(getIdade() + 1);
     }
 
