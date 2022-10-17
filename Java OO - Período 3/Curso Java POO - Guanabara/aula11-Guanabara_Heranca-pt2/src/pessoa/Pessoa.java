@@ -1,3 +1,5 @@
+package pessoa;
+
 public abstract class Pessoa {//por ser uma classe abstrata, não pode ser implementada
     private String nome;
     private int idade;
@@ -9,17 +11,17 @@ public abstract class Pessoa {//por ser uma classe abstrata, não pode ser imple
 
     //métodos especiais
 
-
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", idade=" + idade +
-                ", sexo='" + sexo + '\'' +
-                '}';
+        return "==== Pessoa ====" +
+                "\nnome: '" + nome + '\'' +
+                "\nidade: " + idade +
+                "\nsexo: '" + sexo + '\'';
     }
 
 
+
+    //gets and sets
     public String getNome() {
         return nome;
     }

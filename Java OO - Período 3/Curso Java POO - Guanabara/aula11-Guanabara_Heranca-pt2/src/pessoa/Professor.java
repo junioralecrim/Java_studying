@@ -1,3 +1,5 @@
+package pessoa;
+
 public class Professor extends Pessoa{
 
     private String especialidade;
@@ -10,8 +12,6 @@ public class Professor extends Pessoa{
 
 
     //métodos especiais
-
-
 
     public String getEspecialidade() {
         return especialidade;
