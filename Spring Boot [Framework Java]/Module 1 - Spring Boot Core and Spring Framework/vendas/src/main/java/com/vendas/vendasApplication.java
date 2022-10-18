@@ -26,12 +26,13 @@ dentro do meu pacote base. Ex: com.vendas*/
 
 public class vendasApplication {
 
-    @Autowired
-    @Qualifier(value = "applicationName")
+    @Autowired /*Anotação utilizada para marcar o ponto de injeção na sua classe. Você pode colocar ela
+    sobre atributos ou sobre o seu construtor com argumentos.*/
+    @Qualifier(value = "applicationName") /*marca qual injeção que quero fazer na minha aplicação*/
     private String applicationName;
 
-    @GetMapping("/hello")
-    public String helloWorld(){
+    @GetMapping("/home")
+    public String home(){
         return applicationName;
     }
 
