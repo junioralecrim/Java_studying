@@ -13,17 +13,17 @@ public class Ave extends Animal{
     }
 
     @Override
-    protected void locomover() {
+    public void locomover() {
         System.out.println("Voando");
     }
 
     @Override
-    protected void alimentar() {
+    public void alimentar() {
         System.out.println("Comendo frutas");
     }
 
     @Override
-    protected void emitirSom() {
+    public void emitirSom() {
         System.out.println("Som de ave");
     }
 

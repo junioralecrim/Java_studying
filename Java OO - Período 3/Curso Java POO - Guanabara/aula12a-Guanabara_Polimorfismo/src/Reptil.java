@@ -10,17 +10,17 @@ public class Reptil extends Animal{
     }
 
     @Override
-    protected void locomover() {
+    public void locomover() {
         System.out.println("Rastejando");
     }
 
     @Override
-    protected void alimentar() {
+    public void alimentar() {
         System.out.println("Comendo vegetais");
     }
 
     @Override
-    protected void emitirSom() {
+    public void emitirSom() {
         System.out.println("Som de reptil");
     }
 

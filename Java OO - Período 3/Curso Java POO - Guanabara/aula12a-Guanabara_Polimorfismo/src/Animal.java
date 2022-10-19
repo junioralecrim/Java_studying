@@ -3,11 +3,11 @@ public abstract class Animal {//não pode virar objeto
     protected int idade;
     protected int membros;
 
-    protected abstract void locomover();
+    public abstract void locomover();
 
-    protected abstract void alimentar();
+    public abstract void alimentar();
 
-    protected abstract void emitirSom();
+    public abstract void emitirSom();
 
     public float getPeso() {
         return peso;

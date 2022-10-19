@@ -19,6 +19,6 @@ public class Main {
         can.locomover(); //polimofirsmo
         can.alimentar();
 
-        
+
     }
 }

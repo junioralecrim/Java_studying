@@ -10,17 +10,17 @@ public class Mamifero extends Animal{
     }
 
     @Override
-    protected void locomover() {
+    public void locomover() {
         System.out.println("Correndo");
     }
 
     @Override
-    protected void alimentar() {
+    public void alimentar() {
         System.out.println("Mamando");
     }
 
     @Override
-    protected void emitirSom() {
+    public void emitirSom() {
         System.out.println("Som de mamífero");
     }
 }

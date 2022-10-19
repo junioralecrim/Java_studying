@@ -14,17 +14,17 @@ public class Peixe extends Animal{
     }
 
     @Override
-    protected void locomover() {
+    public void locomover() {
         System.out.println("Nadando");
     }
 
     @Override
-    protected void alimentar() {
+    public void alimentar() {
         System.out.println("Comendo substâncias");
     }
 
     @Override
-    protected void emitirSom() {
+    public void emitirSom() {
         System.out.println("Peixe não faz som");
     }
 
