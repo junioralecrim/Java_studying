@@ -1,4 +1,4 @@
-public class MovimentacaoConta extends Conta{
+public abstract class MovimentacaoConta extends PagarMensal{
     public void depositar(float valorDep){
         if (isStatus()){
             if (valorDep > 0.00){

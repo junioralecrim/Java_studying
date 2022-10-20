@@ -1,4 +1,4 @@
-public class PagarMensal extends Conta{
+public abstract class PagarMensal extends DefineConta{
     public void pagarMensalidade(){
         if (isStatus()){
             if (getSaldo() > 0){

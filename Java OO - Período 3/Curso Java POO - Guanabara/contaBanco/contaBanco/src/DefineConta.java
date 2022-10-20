@@ -1,4 +1,4 @@
-public class DefineConta extends Conta {
+public abstract class DefineConta extends Conta {
 
     public void abrirConta(String nome, String tipo, String cpf, int senha){
         setStatus(true);

@@ -13,10 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-
-        MovimentacaoConta movimentar = new MovimentacaoConta();
-        PagarMensal pagarMensal = new PagarMensal();
-        DefineConta definirConta = new DefineConta();
+        Count count = new Count();
 
 
         System.out.println("--- BEM VINDO A CONTA FACIL ---\nDigite e confirme a opção que deseja seguir:\n");
@@ -35,27 +32,27 @@ public class Main {
                     String tipo = in.next().toLowerCase();
                     System.out.print("Agora, digite uma senha de 4 dígitos: ");
                     int senha = in.nextInt();
-                    definirConta.abrirConta(nome, tipo, cpf, senha);
+                    count.abrirConta(nome, tipo, cpf, senha);
                     break;
 
                 case 2:
-                    definirConta.fecharConta();
+                    count.fecharConta();
                     break;
 
                 case 3:
                     System.out.print("Digite o valor do depósito: ");
                     float valorDep = in.nextFloat();
-                    movimentar.depositar(valorDep);
+                    count.depositar(valorDep);
                     break;
 
                 case 4:
                     System.out.println("Digite o valor do saque: ");
                     float valorSaque = in.nextFloat();
-                    movimentar.sacar(valorSaque);
+                    count.sacar(valorSaque);
                     break;
 
                 case 5:
-                    pagarMensal.pagarMensalidade();
+                    count.pagarMensalidade();
                     break;
 
 
