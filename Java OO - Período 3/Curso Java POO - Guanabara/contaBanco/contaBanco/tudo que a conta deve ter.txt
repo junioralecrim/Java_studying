@@ -1,0 +1,68 @@
+EXTRAS À ADICIONAR:
+Validação do CPF (verificar se o CPF é válido)
+Pedir senha e cpf para sacar, sacando somente se ambos forem válidos
+
+Classe Conta:
+
+Atributos:
+numero
+senha
+tipo
+dono
+saldo
+status = aberta ou fechada
+cpf
+
+
+Métodos:
+abrirConta()
+    //Steps
+    // Definir nome de usuario,
+    // CPF (verificar se o cpf é valido)
+    // tipo,
+    // numero,
+    // senha.
+
+
+fecharConta()
+depósito()
+saque()
+extrato()
+pagarMensal()
+
+
+situações:
+
+CC - Conta corrente
+CP - Conta poupança
+Conta de banco. Corrente e poupança devem virar objeto
+
+Classe Conta:
+
+Atributos:
+numero
+senha
+tipo
+dono
+saldo
+status = aberta ou fechada
+cpf
+
+
+Métodos:
+abrirConta()
+    //Steps
+    // Definir nome de usuario,
+    // CPF (verificar se o cpf é valido)
+    // tipo,
+    // numero,
+    // senha.
+    // Colocar autometicamente o boolean como True
+
+
+fecharConta()
+depósito()
+saque()
+extrato()
+pagarMensal()
+
