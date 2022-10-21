@@ -5,7 +5,7 @@ public class PayService {
     private DeliveryService deliveryService;
 
     //PARA FAZER O DESACOPLAMENTO, UMA DAS FORMAS É FAZER A INJEÇÃO DE DEPENDÊNCIA POR INVERSÃO DE CONTROLE
-    private PayService(TaxService taxService, DeliveryService deliveryService){
+    public void payService(TaxService taxService, DeliveryService deliveryService){
         this.taxService = taxService;
         this.deliveryService = deliveryService;
     }
