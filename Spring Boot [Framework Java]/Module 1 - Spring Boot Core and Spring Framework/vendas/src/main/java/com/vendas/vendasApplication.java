@@ -17,8 +17,8 @@ notations
 @RestController /* A anotation RestController está basicamente dizendo que eu posso mandar msgs pro browser
  através da classe Main*/
 
-/* @ComponentScan(basePackages =
-        {"com.vendas.repository"}
+/*@ComponentScan(basePackages = //convém utilziar quando uso libs de terceiros
+        {"com.vendas.repository", "com.vendas.service", "com.OutraBiblioteca.projeto"}
 ) --> Especificar quais os componentes (classes de config e objetos que eu tenho que escanear
 em busca de configs, beans, controllers, repositorys e serviços). Convém utilizar quando
 eu coloco a classe dentro de outros pacotes, pois o SB já faz o scanner automático de todas essas notations
