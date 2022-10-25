@@ -4,6 +4,12 @@ public abstract class Pessoa {
     protected Sexo sexo;
     protected  boolean experiencia;
 
+    public Pessoa(String nome, int idade, Sexo sexo, boolean experiencia) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = experiencia;
+    }
 
     protected void ganharXp(){
         setExperiencia(true);
