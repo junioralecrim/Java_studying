@@ -16,6 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 notations
 */
 
+@SpringBootApplication
 @RestController /* A anotation RestController está basicamente dizendo que eu posso mandar msgs pro browser
  através da classe Main*/
 
