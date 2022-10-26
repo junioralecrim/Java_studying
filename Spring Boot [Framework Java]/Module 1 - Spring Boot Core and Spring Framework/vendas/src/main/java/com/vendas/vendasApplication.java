@@ -3,6 +3,7 @@ package com.vendas;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,9 +27,7 @@ dentro do meu pacote base. Ex: com.vendas*/
 
 public class vendasApplication {
 
-    @Autowired /*Anotação utilizada para marcar o ponto de injeção na sua classe. Você pode colocar ela
-    sobre atributos ou sobre o seu construtor com argumentos.*/
-    @Qualifier(value = "applicationName") /*marca qual injeção que quero fazer na minha aplicação*/
+    @Value("${application.name}")
     private String applicationName;
 
     @GetMapping("/home")
