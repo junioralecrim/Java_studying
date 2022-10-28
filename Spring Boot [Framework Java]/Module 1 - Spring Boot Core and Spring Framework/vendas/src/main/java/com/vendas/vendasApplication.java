@@ -2,6 +2,7 @@ package com.vendas;
 
 
 import com.annotations.Cachorro;
+import com.annotations.Gato;
 import com.vendas.interfaces.Animal;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -33,7 +34,7 @@ public class vendasApplication {
     private String applicationName;
 
 
-    @Cachorro
+    @Gato
     private Animal animal;
     @Bean(name = "executarAnimal")
     public CommandLineRunner executar(){

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Injeção de Dependência no Spring.iml" filepath="$PROJECT_DIR$/.idea/Injeção de Dependência no Spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/deliveryService/deliveryService.iml" filepath="$PROJECT_DIR$/deliveryService/deliveryService.iml" />
-    </modules>
-  </component>
-</project>
