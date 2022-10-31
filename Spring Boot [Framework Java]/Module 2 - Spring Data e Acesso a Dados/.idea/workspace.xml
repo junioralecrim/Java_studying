@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="619e44f6-b741-44e8-8994-04b81d1e01db" name="Changes" comment="" />
+    <list default="true" id="619e44f6-b741-44e8-8994-04b81d1e01db" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/annotations/Cachorro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/annotations/Development.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/annotations/Gato.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/umaOutraBiblioteca/projeto/ConfigExternaExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/vendas/interfaces/Animal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/vendas/interfaces/implementation/AnimalConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/vendas/model/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/vendas/repository/ClientesRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendas/src/main/java/com/vendas/service/ClientesService.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Java OO - Período 3/Curso Java POO - Guanabara/contaBanco/contaBanco",
+    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Spring Boot [Framework Java]/Module 2 - Spring Data e Acesso a Dados/vendas",
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>

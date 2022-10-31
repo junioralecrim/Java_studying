@@ -1,15 +1,12 @@
-package com.vendas;
+package io.github.dougllasfps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RestController;
 
-/*
-notations
-*/
 @SpringBootApplication
-public class vendasApplication {
+public class VendasApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(vendasApplication.class, args);
+        SpringApplication.run(VendasApplication.class, args);
     }
 }
