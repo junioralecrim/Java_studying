@@ -5,7 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository //para sb entender que é uma classe que acessa a base de dados
+/* Quase todas as Exceptions vão ser traduzidas (vai ter o exception translator) */
 public class Clientes {
 
     private static String INSERT = "insert into cliente (nome) values (?)";
