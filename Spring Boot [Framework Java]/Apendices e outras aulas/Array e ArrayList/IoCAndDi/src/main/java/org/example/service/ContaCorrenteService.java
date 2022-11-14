@@ -1,7 +1,7 @@
 package org.example.service;
 
-import org.example.Cliente;
-import org.example.ContaCorrente;
+import org.example.model.Cliente;
+import org.example.model.ContaCorrente;
 import org.springframework.stereotype.Component;
 
 @Component

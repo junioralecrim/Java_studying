@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.model.Banco;
+import org.example.model.Cliente;
+import org.example.model.ContaCorrente;
 import org.example.service.ContaCorrenteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
