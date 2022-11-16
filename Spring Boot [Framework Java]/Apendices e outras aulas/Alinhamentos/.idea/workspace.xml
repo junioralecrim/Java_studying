@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca5f7066-6ba0-47f3-a434-eab0d2d0b25d" name="Changes" comment="" />
+    <list default="true" id="ca5f7066-6ba0-47f3-a434-eab0d2d0b25d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/web/ContaCorrenteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/Teste.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/service/ContaCorrenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/org/example/service/ContaCorrenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/src/main/java/web/ContaCorrenteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/Banco.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/Cliente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/ContaCorrente.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/Teste.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/Teste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/service/ContaCorrenteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Array e ArrayList/IoCAndDi/target/classes/org/example/service/ContaCorrenteService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,13 +28,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Spring Boot [Framework Java]/Apendices e outras aulas/Alinhamentos"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/junio/Documents/Aulas ADS/Faculdade/Período 2/Java/Java/Spring Boot [Framework Java]/Apendices e outras aulas/Alinhamentos&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
