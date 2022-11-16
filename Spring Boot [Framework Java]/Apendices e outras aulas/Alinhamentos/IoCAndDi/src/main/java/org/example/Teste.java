@@ -14,7 +14,7 @@ public class Teste {
     @Autowired
         ContaCorrenteService servico; //invertendo controle, dando o mesmo para o serviço criado e retirando do cliente
 
-        public void teste(){
+        public void teste(Double valor){
             Cliente clienteMagaton = new Cliente("Gabriel Magaton");
 
 
@@ -26,7 +26,7 @@ public class Teste {
                     " no banco " + conta.getBanco().getNome() + " de codigo " + conta.getBanco().getCodigo() + "");
             System.out.println("A conta corrente de " + conta.getCliente().getNome() + " possui saldo " + conta.getSaldo());
 
-            servico.depositar(clienteMagaton, conta, 1000.00);
+            servico.depositar(clienteMagaton, conta, valor);
 
             System.out.println("A conta corrente " + conta.getCliente().getNome() + " possui saldo " + conta.getSaldo());
 
