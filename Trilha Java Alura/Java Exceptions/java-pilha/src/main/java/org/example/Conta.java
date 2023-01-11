@@ -1,7 +1,7 @@
 package org.example;
 
 public class Conta {
-    public void depositar(){
+    public void depositar() throws MinhaExecao{
 
     }
 }

@@ -13,7 +13,7 @@ public class Fluxo {
         System.out.println("Fim do main");
     }
 
-    private static void metodo1() {
+    private static void metodo1() throws MinhaExecao{
         System.out.println("Ini do metodo1");
         metodo2();
         System.out.println("Fim do metodo1");
