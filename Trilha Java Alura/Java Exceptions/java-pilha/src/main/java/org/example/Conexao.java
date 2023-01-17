@@ -1,8 +1,9 @@
 package org.example;
 
-public class Conexao {
+public class Conexao implements AutoCloseable{
     public Conexao() {
         System.out.println("Abrindo conexão");
+        //throw new IllegalStateException(); //objeto nunca será criado se houver uma exception no construtor
     }
 
     public void leDados(){
@@ -10,7 +11,9 @@ public class Conexao {
         throw new IllegalStateException(); //estado inconsistente - unchecked
     }
 
-    public void fecha(){
+
+    @Override
+    public void close(){
         System.out.println("Fechando conexão");
     }
 }
