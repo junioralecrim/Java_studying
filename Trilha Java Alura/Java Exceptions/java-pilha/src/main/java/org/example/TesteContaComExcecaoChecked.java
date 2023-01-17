@@ -6,7 +6,7 @@ public class TesteContaComExcecaoChecked {
         try {
             c.depositar();
         } catch (MinhaExecao execao){
-
+            System.out.println("Tratamento " + execao.getMessage());
         }
 
         /*

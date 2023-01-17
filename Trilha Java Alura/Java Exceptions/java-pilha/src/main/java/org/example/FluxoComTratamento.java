@@ -29,7 +29,7 @@ public class FluxoComTratamento {
             System.out.println(i);
 //            int a = i / 0;
               Conta c = null;
-              c.depositar(); //nullpoint
+              //c.depositar(); //nullpoint
         }
     }
 }
