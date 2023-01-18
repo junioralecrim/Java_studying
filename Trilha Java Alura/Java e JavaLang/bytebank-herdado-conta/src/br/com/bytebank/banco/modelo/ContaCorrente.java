@@ -1,4 +1,7 @@
-package modelo;
+package br.com.bytebank.banco.modelo;
+
+import br.com.bytebank.banco.SaldoInsuficienteException;
+import br.com.bytebank.banco.Tributavel;
 
 //new ContaCorrente()
 public class ContaCorrente extends Conta implements Tributavel {

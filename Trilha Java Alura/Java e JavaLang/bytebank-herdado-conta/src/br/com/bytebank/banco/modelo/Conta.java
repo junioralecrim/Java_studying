@@ -1,4 +1,6 @@
-package modelo;
+package br.com.bytebank.banco.modelo;
+
+import br.com.bytebank.banco.SaldoInsuficienteException;
 
 public abstract class Conta {
 
@@ -19,7 +21,7 @@ public abstract class Conta {
 
     public abstract void deposita(double valor);
 
-    public void saca(double valor) throws SaldoInsuficienteException{
+    public void saca(double valor) throws SaldoInsuficienteException {
     	
         if(this.saldo < valor) {
             throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
