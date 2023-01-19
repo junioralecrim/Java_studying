@@ -1,7 +1,5 @@
 package br.com.bytebank.banco.modelo;
 
-import br.com.bytebank.banco.SaldoInsuficienteException;
-
 public abstract class Conta {
 
     protected double saldo;
