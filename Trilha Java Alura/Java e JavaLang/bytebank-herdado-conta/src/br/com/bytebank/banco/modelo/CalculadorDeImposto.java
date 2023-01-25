@@ -1,7 +1,5 @@
 package br.com.bytebank.banco.modelo;
 
-import br.com.bytebank.banco.Tributavel;
-
 public class CalculadorDeImposto {
 	
 	private double totalImposto;

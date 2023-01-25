@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="chilkat-9.5.0-jdk11-x64">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/chilkat-9.5.0-jdk11-x64.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Downloads/chilkat-9.5.0-jdk11-x64.zip!/chilkat-9.5.0-jdk11-x64" />
+    </SOURCES>
+  </library>
+</component>
