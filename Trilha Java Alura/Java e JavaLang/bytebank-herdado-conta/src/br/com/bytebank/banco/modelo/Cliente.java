@@ -1,11 +1,11 @@
 package br.com.bytebank.banco.modelo;
 
-/*
-* Classe que representa um cliente Bytebank
-* @author Junior Alecrim
-* @version 0.1
-* */
-
+/**
+ * Classe que representa um cliente no Bytebank 
+ * 
+ * @author André Chaves
+ * @version 0.1
+ */
 public class Cliente {
 
     private String nome;
