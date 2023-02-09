@@ -19,4 +19,6 @@ public class GuardadorDeContas {
     public int getQuantidadeDeElementos(){
         return referencias.length;
     }
+
+
 }
