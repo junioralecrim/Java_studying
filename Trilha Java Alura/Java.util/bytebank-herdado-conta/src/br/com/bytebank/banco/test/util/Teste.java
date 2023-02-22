@@ -5,6 +5,7 @@ import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.ContaPoupanca;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -32,8 +33,9 @@ public class Teste {
             System.out.println(c);
         }
 
-        NumeroDaContaComparator comparator = new NumeroDaContaComparator();
-        lista.sort(comparator);
+//        NumeroDaContaComparator comparator = new NumeroDaContaComparator();
+        lista.sort(new TitularDaContaComparator());
+        Collections.reverse(lista);
 
         System.out.println("------------------------------");
 
@@ -43,20 +45,14 @@ public class Teste {
         }
     }
 
-    public static class NumeroDaContaComparator implements Comparator<Conta> { /*preciso implementar uma classe que contenha um comparator
-        implementado para puxar o critério de comparação e adicionar no método .sort*/
+    public static class TitularDaContaComparator implements Comparator<Conta>{
+
         @Override
         public int compare(Conta c1, Conta c2) {
-
-            if (c1.getNumero() < c2.getNumero()){
-                return -1;
-            }
-            if (c1.getNumero() > c2.getNumero()){
-                return 1;
-            }
-
-            return 0;
+            String nomeC1 = c1.getTitular().getNome();
+            String nomeC2 = c2.getTitular().getNome();
+            return nomeC1.compareTo(nomeC2);
         }
     }
-
 }
+

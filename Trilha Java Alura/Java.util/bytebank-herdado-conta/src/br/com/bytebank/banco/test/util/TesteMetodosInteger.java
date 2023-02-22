@@ -1,5 +1,8 @@
 package br.com.bytebank.banco.test.util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TesteMetodosInteger {
     public static void main(String[] args) {
         int[] idades = new int[5];
@@ -14,5 +17,10 @@ public class TesteMetodosInteger {
 
         Integer numero = Integer.valueOf(s);
         System.out.println(numero);
+
+        List<Number> lista = new ArrayList<>(); //number cabe todos os tipos literais numericos
+        lista.add(15);
+        lista.add(35.4);
+        lista.add(15.2f);
     }
 }
