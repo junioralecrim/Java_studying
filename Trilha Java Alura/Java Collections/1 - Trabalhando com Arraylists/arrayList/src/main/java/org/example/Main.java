@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,9 +26,20 @@ public class Main {
 
         System.out.println("A primeira aula é: " + aulas.get(0));
 
+        System.out.println("###############################################");
+        aulas.forEach(aula -> {
+            System.out.println("Percorrendo : " + aula);
+        });
+
+        aulas.add("Aumentando no nosso conhecimento");
 
 
-        aulas.forEach(aula );
+        System.out.println("--------- Antes da ordenação ---------");
+        System.out.println(aulas);
 
+        Collections.sort(aulas);
+
+        System.out.println("--------- Depois da ordenação ---------");
+        System.out.println(aulas);
     }
 }
