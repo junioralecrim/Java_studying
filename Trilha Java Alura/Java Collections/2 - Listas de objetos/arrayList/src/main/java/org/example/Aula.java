@@ -1,6 +1,6 @@
 package org.example;
 
-public class Aula implements Comparable<Aula>{
+public class Aula implements Comparable<Aula>{ //preciso dizer com oq é comparável
     private String titulo;
     private int tempo;
 
@@ -18,7 +18,7 @@ public class Aula implements Comparable<Aula>{
     }
 
     @Override
-    public int compareTo(Aula outraAula) {
-        return this.titulo.compareTo(outraAula.titulo);
+    public int compareTo(Aula outraAula) { //Eu vou comparar uma aula com outra
+        return this.titulo.compareTo(outraAula.titulo); //por meio do atributo de título
     }
 }

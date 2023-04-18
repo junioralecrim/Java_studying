@@ -34,7 +34,7 @@ public class TestaListaDeAula {
 
         System.out.println("----------------- Agora comparando o por tempo usando Comparator.comparing -----------------");
 
-        Collections.sort(aulas, Comparator.comparing(Aula::getTempo));
+        Collections.sort(aulas, Comparator.comparing(Aula::getTempo)); //Ordenando a aula comparando o tempo das aulas
 
         aulas.forEach(aula -> {
             System.out.println(aula.getTempo());
