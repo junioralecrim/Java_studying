@@ -1,6 +1,7 @@
 package med.voll.api.model.medico.repository;
 
-import med.voll.api.model.medico.dto.Medico;
+import med.voll.api.model.medico.Medico;
+import med.voll.api.model.medico.dto.DadosCadastroMedico;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 //Essa interface serve para herdar de uma outra interface do SpringData, onde eu passo os generics com dois tipos de objetos

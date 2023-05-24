@@ -2,6 +2,7 @@ package med.voll.api.model.medico;
 
 import lombok.Data;
 import med.voll.api.model.endereco.Endereco;
+import med.voll.api.model.medico.dto.DadosCadastroMedico;
 import med.voll.api.model.medico.enums.Especialidade;
 
 
@@ -10,10 +11,17 @@ import med.voll.api.model.medico.enums.Especialidade;
 //acesso aos objetos do banco de dados. Precisa ser feito dessa forma!
 
 @Data
-public class DadosCadastroMedico {
+public class Medico {
     private String nome;
     private String email;
     private String crm;
     private Especialidade especialidade;
     private Endereco endereco;
+
+    public Medico(DadosCadastroMedico dados) {
+        this.nome = dados.getNome();
+        this.email = dados.getEmail();
+        this.crm = dados.getCrm();
+        this.endereco = new Endereco(dados.getEndereco());
+    }
 }
