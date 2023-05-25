@@ -1,8 +1,8 @@
-package med.voll.api.model.endereco;
+package med.voll.api.domain;
 
 import lombok.Data;
 @Data
-public class DadosEndereco {
+public class Endereco { //JPA (ACESSA BANCO DE DADOS)
     private String logradouro;
     private String bairro;
     private String cep;

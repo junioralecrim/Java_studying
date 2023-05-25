@@ -44,3 +44,40 @@ A classe DTO é usada para transferir dados entre diferentes camadas da aplicaç
 | `@Service`                    | Indica que a classe é um serviço, contendo a lógica de negócio e processamento relacionados a uma ou mais entidades.                                          |
 
 
+---
+## Migrations com Flyway
+
+O Flyway é uma ferramenta de migração de banco de dados que automatiza o controle e versionamento das alterações no esquema do banco de dados. Com o Flyway, é possível manter um histórico das alterações e facilitar a colaboração entre desenvolvedores.
+
+### Configuração
+
+Adicione a dependência do Flyway ao seu projeto:
+
+```xml
+<dependency>
+  <groupId>org.flywaydb</groupId>
+  <artifactId>flyway-core</artifactId>
+  <version>7.0.3</version>
+</dependency>
+```
+
+### Migrations
+
+As Migrations são scripts SQL que contêm as alterações a serem aplicadas no banco de dados. Elas são nomeadas seguindo um padrão numérico (exemplo: `V1__criar_tabela.sql`). Coloque os scripts em um diretório específico, como `src/main/resources/db/migration`.
+
+### Execução
+
+Ao iniciar a aplicação, o Flyway verifica as Migrations já aplicadas e executa apenas as pendentes. Dessa forma, as alterações no esquema do banco de dados são aplicadas automaticamente.
+
+### Controle de Versão
+
+O Flyway mantém um registro das Migrations aplicadas em uma tabela chamada `flyway_schema_history`. Isso garante que cada Migration seja executada apenas uma vez e na ordem correta.
+
+### Vantagens
+
+- Controle e versionamento das alterações no esquema do banco de dados.
+- Facilidade de colaboração entre desenvolvedores em equipes.
+- Execução automática e controlada das Migrations pendentes.
+- Histórico completo das alterações realizadas no banco de dados.
+
+Para mais detalhes, consulte a [documentação oficial do Flyway](https://flywaydb.org/documentation).
