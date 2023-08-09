@@ -19,6 +19,7 @@ public class Medico { //JPA (ACESSA BANCO DE DADOS)
 
     private String nome;
     private String email;
+    private String telefone;
     private String crm;
 
     @Enumerated(EnumType.STRING)
@@ -34,6 +35,7 @@ public class Medico { //JPA (ACESSA BANCO DE DADOS)
         this.crm = dados.getCrm();
         this.especialidade = dados.getEspecialidade();
         this.endereco = dados.getEndereco();
+        this.telefone = dados.getTelefone();
     }
 }
 
