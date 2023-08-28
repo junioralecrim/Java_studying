@@ -10,4 +10,5 @@ spring:
     show-sql: true
     properties:
       hibernate:
+        #formata o código sql no console
         format_sql: true

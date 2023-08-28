@@ -36,4 +36,28 @@ public class DadosEndereco { //DTO (PEGA AS INFOS DO JPA)
         this.numero = dadosEndereco.getNumero();
         this.complemento = dadosEndereco.getComplemento();
     }
+
+    public void atualizarInformacoes(DadosEndereco dados) {
+        if (dados.logradouro != null){
+            this.logradouro = dados.getLogradouro();
+        }
+        if (dados.bairro != null){
+            this.bairro = dados.getBairro();
+        }
+        if (dados.cep != null){
+            this.cep = dados.getCep();
+        }
+        if (dados.cidade != null){
+            this.cidade = dados.getCidade();
+        }
+        if (dados.uf != null){
+            this.uf = dados.getUf();
+        }
+        if (dados.numero != null){
+            this.numero = dados.getNumero();
+        }
+        if (dados.complemento != null){
+            this.complemento = dados.getComplemento();
+        }
+    }
 }

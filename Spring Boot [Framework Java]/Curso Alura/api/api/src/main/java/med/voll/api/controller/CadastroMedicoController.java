@@ -2,6 +2,7 @@ package med.voll.api.controller;
 
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
+import med.voll.api.domain.dto.DadosAtualizacaoMedico;
 import med.voll.api.domain.dto.DadosCadastroMedico;
 import med.voll.api.domain.Medico;
 import med.voll.api.domain.dto.DadosListagemMedico;
@@ -12,8 +13,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 
 @RestController
@@ -39,5 +38,14 @@ public class CadastroMedicoController {
     public Page<DadosListagemMedico> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao){ //pageable é para fazer a paginação de forma simples
         //converte uma lista de medicos para uma lista de DadosListagemMedico, que é o DTO
         return repository.findAll(paginacao).map(DadosListagemMedico::new);
+    }
+
+    @PutMapping("/atualizar")
+    @Transactional
+    public void atualizar(@RequestBody @Valid DadosAtualizacaoMedico dados){
+//        Quando a jpa carrega um classe/objeto do banco de dados e detecta que teve alguma alteração,
+//        ela faz essa alteração sozinha. Então o put é feito de maneira automatica
+        var medico = repository.getReferenceById(dados.getId());
+        medico.atulizarInformacoes(dados);
     }
 }
