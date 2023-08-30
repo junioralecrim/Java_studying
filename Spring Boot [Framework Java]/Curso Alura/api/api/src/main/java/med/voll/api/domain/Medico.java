@@ -29,7 +29,10 @@ public class Medico { //JPA (ACESSA BANCO DE DADOS)
     @Embedded
     private DadosEndereco endereco;
 
+    private Boolean ativo;
+
     public Medico(DadosCadastroMedico dados) {
+        this.ativo = true;
         this.id = dados.getId();
         this.nome = dados.getNome();
         this.email = dados.getEmail();
@@ -49,6 +52,10 @@ public class Medico { //JPA (ACESSA BANCO DE DADOS)
         if (dados.getEndereco() != null){
             this.endereco.atualizarInformacoes(dados.getEndereco());
         }
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 }
 

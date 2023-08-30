@@ -37,7 +37,8 @@ public class CadastroMedicoController {
     @GetMapping("/listar")
     public Page<DadosListagemMedico> listar(@PageableDefault(size = 10, sort = {"nome"}) Pageable paginacao){ //pageable é para fazer a paginação de forma simples
         //converte uma lista de medicos para uma lista de DadosListagemMedico, que é o DTO
-        return repository.findAll(paginacao).map(DadosListagemMedico::new);
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemMedico::new); //existe um padrão na JPA que se eu fizer nesse sentido findAllByAlgumaCoisa, ele constrói
+        //automaticamente a consulta da forma que eu desejar. No caso, ele está procurando pelo atributo ativo e somente os que está como True.
     }
 
     @PutMapping("/atualizar")
@@ -48,4 +49,18 @@ public class CadastroMedicoController {
         var medico = repository.getReferenceById(dados.getId());
         medico.atulizarInformacoes(dados);
     }
+
+    @DeleteMapping("/excluir/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id){ //o @PathVariable está setando o id da url como parametro do metodo
+        var medico = repository.getReferenceById(id); //recuperando medico do banco de dados
+        medico.excluir();
+    }
+//    @DeleteMapping("/excluir/{id}")
+//    @Transactional
+//    public void excluir(@PathVariable Long id){ //o @PathVariable está setando o id da url como parametro do metodo
+//        repository.deleteById(id);
+//    }
+
+
 }
