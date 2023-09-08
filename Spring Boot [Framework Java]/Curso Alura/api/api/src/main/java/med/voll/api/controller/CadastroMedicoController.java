@@ -12,9 +12,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
 
 
 @RestController
@@ -27,14 +31,16 @@ public class CadastroMedicoController {
 
     @PostMapping
     @Transactional
-    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroMedico body){ //(DTO) A anotação é para dizer que o spring deve pegar o body da requisição
+    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroMedico body, UriComponentsBuilder uriBuilder){ //(DTO) A anotação é para dizer que o spring deve pegar o body da requisição
+        var medico = new Medico(body);
         try {
-            repository.save(new Medico(body));;// devo converter o DTO para um objeto do tipo médico
+            repository.save(medico);// devo converter o DTO para um objeto do tipo médico
             log.info("Dados cadastrados com sucesso {[]}", body);
         } catch (Exception e){
             log.error("Erro inesperado ao realizar transação de cadastro : {[]}", e.getMessage());
         }
-          
+        var uri = uriBuilder.path("/medicos/{id}").buildAndExpand(medico.getId()).toUri(); //devolvendo cabeçalho location com a uri (basicamente o path de onde tá chamando)
+        return ResponseEntity.created(uri).body(new DadosDetalhamentoMedico(medico));
     }
 
     @GetMapping("/listar")
@@ -51,8 +57,10 @@ public class CadastroMedicoController {
 //        Quando a jpa carrega um classe/objeto do banco de dados e detecta que teve alguma alteração,
 //        ela faz essa alteração sozinha. Então o put é feito de maneira automatica
         var medico = repository.getReferenceById(dados.getId());
+        log.info("Informações enviadas para atualizar" + medico);
         medico.atulizarInformacoes(dados);
-        return ResponseEntity.ok(new DadosDetalhamentoMedico(medico));
+        log.info("Informações atualiadas : " + medico);
+        return new ResponseEntity<>(new DadosDetalhamentoMedico(medico), HttpStatus.OK);
     }
 
     @DeleteMapping("/excluir/{id}")

@@ -1,9 +1,12 @@
 package med.voll.api.domain.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 import med.voll.api.domain.Endereco;
 import med.voll.api.domain.Medico;
 import med.voll.api.domain.enums.Especialidade;
 
+@Data
 public class DadosDetalhamentoMedico {
 
     private Long id;
